@@ -5,7 +5,7 @@ from src.helper import voice_input, llm_model, text_to_speech
 def main():
     st.title('Multilingual Voice Assistant')
 
-    if st.button('Please ask'):
+    if st.button('Please click & ask a question'):
         with st.spinner('Listening...'):
             text = voice_input()
             response = llm_model(text)
